@@ -1,0 +1,72 @@
+SERVER CREATION
+--------------------------------
+----------------------------------------
+
+
+1.Create package.json ---> npm init
+------------------------------------------ 
+
+package name: (bankserver)
+version: (1.0.0)                                                                                                                                                            
+description: Bank app backend using node.js
+entry point: (index.js)                                                                                                                                                     
+test command: start                                                                                                                                                         
+git repository:                                                                                                                                                             
+keywords: Nodejs Express MongoDB                                                                                                                                            
+author: Athul                                                                                                                                                               
+license: (ISC)                                                                                                                                                              
+About to write to C:\Users\Athul\Documents\MEAN\ANGULAR\BANK\bankserver\package.json:
+
+2.Create Nodemodules --> npm i Express
+-----------------------------------------------
+
+Basic Steps
+--------------------
+1.Creating a folder - bankserver
+2.npm init
+3 npm i Express
+4.create index.js file
+5.import express inside index.js
+6.create app using express
+7.setup port number
+8.resolving http req
+9.install nodemon
+10.http Status code
+     1xx - Information
+     2xx - Success
+     3xx - Redirection
+     4xx - Client error
+     5xx -Server error
+
+11.JWT Token - Authentication
+
+     To check login or not ?
+     login ---> token generate ---> client ---> req to deposit +token ---> server token check?  
+     Install JWT Token -jsonwebtoken
+     
+       - npm i jsonwebtoken
+       - to generate a new jwt token - sign()
+
+12.Middleware - to verify the token 
+
+   - it comes in the middle of req and res
+   - it also provide access to many functions
+
+       1.Application level Middleware
+         - for entire app
+
+       2.Router level Middleware
+         - To validate the token -verify()
+
+13.Database Integretion
+
+   Install mongoose - npm i mongoose(to connect node with mongoDB)
+   Db connect via mongoose
+   Create a model using mongoose
+
+14.Asynchonous Function Resolving 
+  1)Resolving State - then()
+  2)Rejection State - catch() 
+
+15.CORS - Cross origin resource sharing
+    install cors - npm i cors  
